@@ -24,6 +24,34 @@ nav a {
   margin: 0 20px;
 }
 
+.hamburger {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.burgerline {
+  background-color: #fff;
+  width: 100%;
+  height: 11%;
+  margin: 25%;
+}
+
+.hamburger:hover .line2 {
+  transform: scale(0);
+  transition: ease 0.2s;
+}
+
+.hamburger:hover .line1 {
+  transform: rotate(405deg) translateY(10px);
+  transition: ease 0.7s;
+}
+
+.hamburger:hover .line3 {
+  transform: rotate(-45deg) translateY(-10px);
+  transition: ease 0.7s;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -75,16 +103,22 @@ button {
   font-size: 2.5rem;
 }
 
-.catGrid {
+.catGrid,
+.cat_gallery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
   width: 100%;
 }
 
-.catGrid img {
+.catGrid img,
+.cat_gallery img {
   width: 100%;
   height: auto;
+}
+
+.cat_gallery {
+  padding: 3rem;
 }
 
 .section form div {
@@ -94,7 +128,7 @@ button {
 }
 
 footer {
-  background-color: #333;
+  background-color: hsl(270, 50%, 80%);
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -107,6 +141,41 @@ textarea {
   margin-bottom: 5px;
 }
 
+/*Slut på startsida*/
+
+.arrow {
+  width: 20px;
+  height: 20px;
+}
+
+.arrowline {
+  background-color: #fff;
+  width: 100%;
+  height: 11%;
+  margin: 25%;
+}
+
+.arrow:hover {
+  transform: scale(1.25);
+  transition: ease 0.5s;
+}
+
+.arrow:hover .aline2 {
+  transform: translateX(1px);
+  width: 150%;
+}
+.arrow:hover .aline1 {
+  width: 90%;
+  transform: rotate(-45deg);
+  transition: ease 0.7s;
+}
+.arrow:hover .aline3 {
+  width: 90%;
+  transform: rotate(45deg);
+  transition: ease 0.7s;
+}
+
+/*Mediaqueries*/
 @media (min-width: 786px) {
   nav {
     display: block;
@@ -114,7 +183,7 @@ textarea {
     padding: 10px;
   }
 
-  .hmbgr {
+  .hamburger {
     display: none;
   }
 
@@ -125,13 +194,15 @@ textarea {
     text-align: left;
   }
 
-  .catGrid {
+  .catGrid,
+  .cat_gallery {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 1080px) {
-  .catGrid {
+  .catGrid,
+  .cat_gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
 

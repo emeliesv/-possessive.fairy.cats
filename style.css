@@ -132,6 +132,26 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px;
+  position: relative;
+}
+
+.giphy {
+  display: block;
+  position: absolute;
+  bottom: 1.9rem;
+  right: 0;
+  width: 10rem;
+  animation: catwalk 10s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes catwalk {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 810px;
+  }
 }
 
 input,
@@ -190,7 +210,6 @@ textarea {
   .container {
     display: flex;
     flex-direction: column;
-    width: 900px;
     text-align: left;
   }
 
@@ -242,5 +261,18 @@ textarea {
   .catGrid .katt8:hover {
     transform: scale(1.25) translate(-220px, -200px);
     transition: ease-in 1s;
+  }
+
+  .giphy {
+    animation: catwalk 15s infinite;
+  }
+
+  @keyframes catwalk {
+    from {
+      right: 0px;
+    }
+    to {
+      right: 1400px;
+    }
   }
 }

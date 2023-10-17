@@ -233,34 +233,32 @@ textarea {
     width: 50%;
   }
 
+  .catty {
+    transition: 1.5s ease-in-out;
+  }
+
   .catGrid .katt3:hover {
     transform: scale(1.25) translate(220px, 175px);
-    transition: ease-in 1s;
   }
 
   .catGrid .katt4:hover {
     transform: scale(1.25) translateY(200px);
-    transition: ease-in 1s;
   }
 
   .catGrid .katt5:hover {
     transform: scale(1.25) translate(-220px, 200px);
-    transition: ease-in 1s;
   }
 
   .catGrid .katt6:hover {
     transform: scale(1.25) translate(220px, -175px);
-    transition: ease-in 1s;
   }
 
   .catGrid .katt7:hover {
     transform: scale(1.25) translateY(-200px);
-    transition: ease-in 1s;
   }
 
   .catGrid .katt8:hover {
     transform: scale(1.25) translate(-220px, -200px);
-    transition: ease-in 1s;
   }
 
   .giphy {
